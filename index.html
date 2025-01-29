@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio - Développeur Web & Mobile</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#accueil">
+          <div class="brand-wrapper">
+            <span class="brand-text" data-text="Parfait KY">Parfait KY</span>
+            <span class="brand-dot"></span>
+            <div class="brand-highlight"></div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#accueil">
+                <i class="fas fa-home"></i>
+                <span class="nav-text">Accueil</span>
+                <span class="nav-hover-effect"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                <i class="fas fa-user me-1"></i>
+                <span class="nav-link-text">À propos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">
+                <i class="fas fa-cog me-1"></i>
+                <span class="nav-link-text">Services</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projets">
+                <i class="fas fa-project-diagram me-1"></i>
+                <span class="nav-link-text">Projets</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contact-link" href="#contact">
+                <i class="fas fa-paper-plane me-1"></i>
+                <span class="nav-link-text">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="vh-100 d-flex align-items-center position-relative overflow-hidden">
+      <div class="header-shapes">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="shape-3"></div>
+      </div>
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-lg-start text-center mb-5 mb-lg-0">
+            <div class="header-content">
+              <span class="badge bg-primary-soft mb-4 animate__animated animate__fadeInDown">
+                Développeur Full Stack
+              </span>
+              <h1 class="display-4 fw-bold mb-4 text-white animate__animated animate__fadeInUp">
+                Créateur de Solutions
+                <span class="text-gradient d-block">Digitales</span>
+              </h1>
+              <p class="lead mb-4 text-white-50 animate__animated animate__fadeInUp animate__delay-1s">
+                Je transforme vos idées en expériences numériques exceptionnelles
+              </p>
+              <div class="header-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                <a href="#contact" class="btn btn-primary btn-lg me-3 mb-2 mb-lg-0">
+                  <i class="fas fa-paper-plane me-2"></i>Contactez-moi
+                </a>
+                <a href="#projets" class="btn btn-outline-light btn-lg">
+                  <i class="fas fa-eye me-2"></i>Voir mes projets
+                </a>
+              </div>
+              <div class="header-stats mt-5 d-none d-lg-flex">
+                <div class="stat-item me-4">
+                  <h3 class="text-white mb-2">
+                    <span class="counter" data-target="10">0</span>+
+                  </h3>
+                  <p class="text-white-50 mb-0">Projets Réalisés</p>
+                </div>
+                <div class="stat-item me-4">
+                  <h3 class="text-white mb-2">
+                    <span class="counter" data-target="100">0</span>%
+                  </h3>
+                  <p class="text-white-50 mb-0">Satisfaction Client</p>
+                </div>
+                <div class="stat-item">
+                  <h3 class="text-white mb-2">
+                    <span class="counter" data-target="1">0</span>
+                  </h3>
+                  <p class="text-white-50 mb-0">Années d'Expérience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="header-image animate__animated animate__fadeInRight">
+              <div class="floating-tech">
+                <div class="tech-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="tech-icon">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <div class="tech-icon">
+                  <i class="fab fa-js"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about" class="text-white">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="py-5">
+      <div class="about-wrapper">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="about-image-container">
+                <div class="about-image">
+                  <img src="parfait.jpg" alt="Parfait KY" class="img-fluid">
+                </div>
+                <div class="about-blob"></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-content">
+                <span class="about-subtitle">À Propos de Moi</span>
+                <h2 class="about-title">Développeur Web & Mobile Passionné</h2>
+                <p class="about-text">
+                  Je suis un développeur web et mobile passionné par la création d'applications innovantes et performantes. 
+                  Mon expertise couvre le développement front-end et back-end, avec une spécialisation dans les technologies modernes.
+                </p>
+                <div class="about-skills">
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Frontend développement</span>
+                      <span>70%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Backend</span>
+                      <span>45%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 45%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span>Développement Mobile</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Stats -->
+    <section id="stats" class="py-5 position-relative overflow-hidden">
+      <div class="stats-bg"></div>
+      <div class="container">
+        <div class="row g-4">
+          <!-- Stat 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-project-diagram"></i>
+                <div class="stat-icon-bg"></div>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number">
+                  <span class="counter" data-target="10">0</span>
+                  <span class="stat-suffix">+</span>
+                </div>
+                <p class="stat-label">Projets Réalisés</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-smile-beam"></i>
+                <div class="stat-icon-bg"></div>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number">
+                  <span class="counter" data-target="100">0</span>
+                  <span class="stat-suffix">%</span>
+                </div>
+                <p class="stat-label">Satisfaction Client</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-code"></i>
+                <div class="stat-icon-bg"></div>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number">
+                  <span class="counter" data-target="15000">0</span>
+                  <span class="stat-suffix">+</span>
+                </div>
+                <p class="stat-label">Lignes de Code</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-clock"></i>
+                <div class="stat-icon-bg"></div>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number">
+                  <span class="counter" data-target="1">0</span>
+                  <span class="stat-suffix">an</span>
+                </div>
+                <p class="stat-label">d'Expérience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="py-5">
+      <div class="services-container">
+        <div class="section-header text-center mb-5">
+          <span class="section-badge">Mes Services</span>
+          <h2 class="section-title">Solutions Sur Mesure</h2>
+          <p class="section-subtitle">Des services adaptés à vos besoins numériques</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-item" data-tilt data-tilt-max="10">
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+                <div class="icon-bg"></div>
+              </div>
+              <h3>Développement Web</h3>
+              <p>Création de sites web modernes, réactifs et optimisés pour tous les appareils.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i>Sites vitrines & E-commerce</li>
+                <li><i class="fas fa-check"></i>Applications web sur mesure</li>
+                <li><i class="fas fa-check"></i>Optimisation SEO</li>
+              </ul>
+              <div class="service-techs">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+            <div class="service-shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+              <div class="shape shape-3"></div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-item" data-tilt data-tilt-max="10">
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+                <div class="icon-bg"></div>
+              </div>
+              <h3>Développement Mobile</h3>
+              <p>Création d'applications mobiles natives et cross-platform performantes et intuitives.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i>Applications iOS & Android</li>
+                <li><i class="fas fa-check"></i>Applications Cross-Platform</li>
+                <li><i class="fas fa-check"></i>Maintenance & Support</li>
+              </ul>
+              <div class="service-techs">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                
+              </div>
+            </div>
+            <div class="service-shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+              <div class="shape shape-3"></div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-item" data-tilt data-tilt-max="10">
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fas fa-database"></i>
+                <div class="icon-bg"></div>
+              </div>
+              <h3>Backend & Base de données</h3>
+              <p>Développement de solutions backend robustes et évolutives pour vos applications.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i>API RESTful</li>
+                <li><i class="fas fa-check"></i>Gestion de Base de données</li>
+                <li><i class="fas fa-check"></i>Sécurité & Performance</li>
+              </ul>
+              <div class="service-techs">
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+            <div class="service-shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+              <div class="shape shape-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="py-5 position-relative overflow-hidden">
+      <div class="projects-bg"></div>
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-subtitle">Portfolio</span>
+          <h2 class="section-title">Projets Réalisés</h2>
+          <div class="title-separator">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="projects-filter mb-5">
+          <div class="filter-wrapper">
+            <button class="filter-btn active" data-filter="all">
+              <span class="filter-text">Tous</span>
+            </button>
+            <button class="filter-btn" data-filter="web">
+              <span class="filter-text">Web</span>
+            </button>
+            <button class="filter-btn" data-filter="mobile">
+              <span class="filter-text">Mobile</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper projects-swiper">
+          <div class="swiper-wrapper">
+            <!-- Projet 1 - Soutrali Deals -->
+            <div class="swiper-slide" data-category="web">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="soutrali.png" alt="Soutrali Deals" />
+                  <div class="project-overlay">
+                    <div class="project-content">
+                      <span class="project-category">Développement WEB</span>
+                      <h3 class="project-title">Soutrali Deals</h3>
+                      <p class="project-description">
+                        Agence de développement web et mobile
+                      </p>
+                      <div class="project-links">
+                        <a href="https://parfaitky.github.io/SOUTRALI_DEALS/" target="_blank" class="project-link">
+                          <i class="fas fa-eye"></i>
+                          <span>Voir le projet</span>
+                        </a>
+                        <a href="https://github.com/ParfaitKY/SOUTRALI_DEALS.git" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i>
+                          <span>Code source</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <div class="tech-stack">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet 2 - Instagram Clone -->
+            <div class="swiper-slide" data-category="mobile">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="Design sans titre.png" alt="Instagram Clone" />
+                  <div class="project-overlay">
+                    <div class="project-content">
+                      <span class="project-category">Développement Mobile</span>
+                      <h3 class="project-title">Instagram Clone</h3>
+                      <p class="project-description">
+                        Clone d'Instagram avec fonctionnalités de base
+                      </p>
+                      <div class="project-links">
+                        <a href="https://github.com/ParfaitKY/Instagram_clone_app.git" target="_blank" class="project-link">
+                          <i class="fas fa-eye"></i>
+                          <span>Voir le projet</span>
+                        </a>
+                        <a href="https://github.com/ParfaitKY/Instagram_clone_app.git" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i>
+                          <span>Code source</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <div class="tech-stack">
+                    <span class="tech-badge">Flutter</span>
+                    <span class="tech-badge">Firebase</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+
+            <!-- Projet 4 - Todo List -->
+            <div class="swiper-slide" data-category="web">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="todolist.png" alt="Todo List" />
+                  <div class="project-overlay">
+                    <div class="project-content">
+                      <span class="project-category">Développement WEB</span>
+                      <h3 class="project-title">Todo List</h3>
+                      <p class="project-description">
+                        Application de gestion de tâches avec stockage local
+                      </p>
+                      <div class="project-links">
+                        <a href="https://parfaitky.github.io/Todolist/" target="_blank" class="project-link">
+                          <i class="fas fa-eye"></i>
+                          <span>Voir le projet</span>
+                        </a>
+                        <a href="https://github.com/ParfaitKY/Todolist.git" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i>
+                          <span>Code source</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <div class="tech-stack">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet 5 - Calculateur de Calories -->
+            <div class="swiper-slide" data-category="web">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="calorie.png" alt="Calculateur de Calories" />
+                  <div class="project-overlay">
+                    <div class="project-content">
+                      <span class="project-category">Développement WEB</span>
+                      <h3 class="project-title">Calculateur de Calories</h3>
+                      <p class="project-description">
+                        Application web pour calculer les besoins caloriques quotidiens
+                      </p>
+                      <div class="project-links">
+                        <a href="https://parfaitky.github.io/calculateur_de_calories/" target="_blank" class="project-link">
+                          <i class="fas fa-eye"></i>
+                          <span>Voir le projet</span>
+                        </a>
+                        <a href="https://github.com/ParfaitKY/calculateur_de_calories.git" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i>
+                          <span>Code source</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <div class="tech-stack">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Projet 6 quiz mobile-->
+            <div class="swiper-slide" data-category="mobile">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="QUIIZ.png" alt="" />
+                  <div class="project-overlay">
+                    <div class="project-content">
+                      <span class="project-category">Développement Mobile</span>
+                      <h3 class="project-title">Quiz Mobile</h3>
+                      <p class="project-description">
+                        Application mobile de quiz avec questions aléatoires
+                      </p>
+                      <div class="project-links">
+                        <a href="https://github.com/ParfaitKY/quiz-app.git" target="_blank" class="project-link">
+                          <i class="fas fa-eye"></i>
+                          <span>Voir le projet</span>
+                        </a>
+                        <a href="https://github.com/ParfaitKY/quiz-app.git" target="_blank" class="project-link">
+                          <i class="fab fa-github"></i>
+                          <span>Code source</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <div class="tech-stack">
+                    <span class="tech-badge">Flutter</span>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          
+
+          <!-- Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-5 position-relative overflow-hidden">
+      <div class="contact-bg"></div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge bg-primary-soft mb-2 animate__animated animate__fadeInDown">Contact</span>
+          <h2 class="section-title mb-3">Travaillons Ensemble</h2>
+          <p class="lead text-muted">N'hésitez pas à me contacter pour discuter de vos projets</p>
+        </div>
+        
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-card">
+              <div class="contact-info mb-5">
+                <div class="row g-4">
+                  <div class="col-md-4">
+                    <div class="contact-info-item">
+                      <div class="contact-info-icon">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <h5>Email</h5>
+                      <p>parfaitky13@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="contact-info-item">
+                      <div class="contact-info-icon">
+                        <i class="fas fa-phone"></i>
+                      </div>
+                      <h5>Téléphone</h5>
+                      <p>+225 0769534305</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="contact-info-item">
+                      <div class="contact-info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <h5>Localisation</h5>
+                      <p>Abidjan, Côte d'Ivoire	</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <form class="contact-form">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                      <label for="name">Votre nom</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                      <label for="email">Votre email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="subject" placeholder="Sujet">
+                      <label for="subject">Sujet</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" id="message" placeholder="Votre message" style="height: 150px" required></textarea>
+                      <label for="message">Votre message</label>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                      <i class="fas fa-paper-plane me-2"></i>Envoyer le message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row">
+            <!-- Colonne Logo & Description -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <div class="footer-brand">
+                <h3>Parfait KY</h3>
+                <p class="footer-description">
+                  Développeur Web & Mobile passionné par la création d'expériences numériques innovantes.
+                </p>
+              </div>
+              <div class="social-links">
+                <a href="https://github.com/ParfaitKY" target="_blank" class="social-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/parfait-ky" target="_blank" class="social-link">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:parfaitky13@gmail.com" class="social-link">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Colonne Navigation Rapide -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <h4 class="footer-title">Navigation Rapide</h4>
+              <ul class="footer-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Colonne Contact -->
+            <div class="col-lg-4">
+              <h4 class="footer-title">Contact</h4>
+              <ul class="footer-contact">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Abidjan, Côte d'Ivoire</span>
+                </li>
+                <li>
+                  <i class="fas fa-phone"></i>
+                  <span>+225 0769534305</span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <span>parfaitky13@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <p class="copyright">
+                &copy; 2025 Parfait KY. Tous droits réservés.
+              </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <p class="credits">
+                Conçu et développé avec <i class="fas fa-heart"></i> par Parfait KY
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Ajoutez ces scripts avant la fermeture du body -->
+    <div class="back-to-top">
+      <a href="#" class="btn btn-primary rounded-circle">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // Optimisation du scroll
+      $(document).ready(function () {
+        // Smooth scroll pour les liens d'ancrage
+        $('a[href^="#"]').on("click", function (e) {
+          e.preventDefault();
+          var target = $(this.hash);
+          $("html, body").animate(
+            {
+              scrollTop: target.offset().top - 56, // Hauteur de la navbar
+            },
+            800
+          );
+        });
+
+        // Animation des compteurs optimisée
+        const counters = document.querySelectorAll(".counter");
+        const options = {
+          threshold: 0.5,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const counter = entry.target;
+              const target = +counter.getAttribute("data-target");
+              const duration = 2000; // 2 secondes
+              const steps = 50;
+              const stepValue = target / steps;
+              let current = 0;
+
+              const updateCounter = () => {
+                current += stepValue;
+                if (current < target) {
+                  counter.textContent = Math.ceil(current);
+                  requestAnimationFrame(updateCounter);
+                } else {
+                  counter.textContent = target;
+                }
+              };
+              requestAnimationFrame(updateCounter);
+              observer.unobserve(counter);
+            }
+          });
+        }, options);
+
+        counters.forEach((counter) => observer.observe(counter));
+
+        // Animation des cartes optimisée
+        const cards = document.querySelectorAll(".card");
+        const cardObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                cardObserver.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+
+        cards.forEach((card) => cardObserver.observe(card));
+
+        // Bouton retour en haut optimisé
+        const backToTop = $(".back-to-top");
+        let lastScroll = 0;
+
+        $(window).scroll(
+          _.throttle(function () {
+            const currentScroll = $(this).scrollTop();
+
+            if (currentScroll > 200) {
+              backToTop.fadeIn();
+            } else {
+              backToTop.fadeOut();
+            }
+
+            lastScroll = currentScroll;
+          }, 100)
+        );
+
+        // Gestion du menu mobile
+        $(".navbar-nav a").on("click", function () {
+          $(".navbar-collapse").collapse("hide");
+        });
+      });
+
+      // Filtrage des projets
+      document.addEventListener('DOMContentLoaded', function() {
+        // Sélectionner tous les boutons de filtre et les projets
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        // Fonction pour filtrer les projets
+        function filterProjects(category) {
+          projectCards.forEach(card => {
+            const cardCategory = card.parentElement.getAttribute('data-category');
+            
+            // Masquer d'abord tous les projets avec une animation
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.8)';
+            
+            setTimeout(() => {
+              if (category === 'all' || cardCategory === category) {
+                card.parentElement.style.display = 'block';
+                // Afficher les projets correspondants avec une animation
+                setTimeout(() => {
+                  card.style.opacity = '1';
+                  card.style.transform = 'scale(1)';
+                }, 50);
+              } else {
+                card.parentElement.style.display = 'none';
+              }
+            }, 300);
+          });
+        }
+
+        // Ajouter les écouteurs d'événements aux boutons de filtre
+        filterButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Retirer la classe active de tous les boutons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Ajouter la classe active au bouton cliqué
+            button.classList.add('active');
+            // Filtrer les projets selon la catégorie
+            const category = button.getAttribute('data-filter');
+            filterProjects(category);
+          });
+        });
+
+        // Filtrer initialement sur 'all'
+        filterProjects('all');
+      });
+      document.addEventListener("DOMContentLoaded", function() {
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function() {
+        // Fonction pour animer les compteurs
+        function animateCounter(element, target, duration = 2000) {
+          let start = 0;
+          const increment = target / (duration / 16); // 60 FPS
+
+          function updateCounter() {
+            start += increment;
+            if (start < target) {
+              element.textContent = Math.floor(start).toLocaleString();
+              requestAnimationFrame(updateCounter);
+            } else {
+              element.textContent = target.toLocaleString();
+            }
+          }
+
+          updateCounter();
+        }
+
+        // Observer pour les compteurs
+        const counterObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute("data-target"));
+                animateCounter(counter, target);
+                counterObserver.unobserve(counter);
+              }
+            });
+          },
+          {
+            threshold: 0.5,
+          }
+        );
+
+        // Observer pour le compteur de lignes de code
+        const smallCounterObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute("data-target"));
+                animateCounter(counter, target, 3000); // Durée plus longue pour un effet plus impressionnant
+                smallCounterObserver.unobserve(counter);
+              }
+            });
+          },
+          {
+            threshold: 0.5,
+            rootMargin: "0px",
+          }
+        );
+
+        // Initialiser les observers
+        document.querySelectorAll(".counter").forEach((counter) => {
+          counterObserver.observe(counter);
+        });
+
+        document.querySelectorAll(".counter-small").forEach((counter) => {
+          smallCounterObserver.observe(counter);
+        });
+      });
+    </script>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Initialisation EmailJS -->
+    <script>
+      (function() {
+        emailjs.init("wP8ryJTiMY-jOFqca"); // Remplacez par votre clé publique EmailJS
+      })();
+    </script>
+
+    <!-- Script de validation et envoi du formulaire -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('.contact-form');
+        const submitButton = form.querySelector('button[type="submit"]');
+        
+        function showNotification(message, type) {
+          if (type === 'success') {
+            // Créer l'overlay
+            const overlay = document.createElement('div');
+            overlay.className = 'notification-overlay';
+            document.body.appendChild(overlay);
+
+            // Créer la notification
+            const notification = document.createElement('div');
+            notification.className = 'notification-success';
+            notification.innerHTML = `
+              <div class="notification-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <h3 class="notification-title">Message envoyé !</h3>
+              <p class="notification-message">Votre message a été envoyé avec succès. Je vous répondrai dans les plus brefs délais.</p>
+            `;
+            document.body.appendChild(notification);
+
+            // Supprimer la notification après 3 secondes
+            setTimeout(() => {
+              overlay.style.animation = 'fadeOut 0.3s ease forwards';
+              notification.style.animation = 'fadeOut 0.3s ease forwards';
+              setTimeout(() => {
+                overlay.remove();
+                notification.remove();
+              }, 300);
+            }, 3000);
+          } else {
+            // Pour les messages d'erreur, garder l'ancien style
+            const notification = document.createElement('div');
+            notification.className = `alert alert-${type} mt-3 animate__animated animate__fadeIn`;
+            notification.textContent = message;
+            form.appendChild(notification);
+            
+            setTimeout(() => {
+              notification.classList.add('animate__fadeOut');
+              setTimeout(() => notification.remove(), 500);
+            }, 3000);
+          }
+        }
+
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Validation des champs
+          const name = form.querySelector('#name').value.trim();
+          const email = form.querySelector('#email').value.trim();
+          const subject = form.querySelector('#subject').value.trim();
+          const message = form.querySelector('#message').value.trim();
+          
+          if (!name || !email || !subject || !message) {
+            showNotification('Veuillez remplir tous les champs', 'danger');
+            return;
+          }
+          
+          if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+            showNotification('Veuillez entrer une adresse email valide', 'danger');
+            return;
+          }
+
+          // Désactiver le bouton pendant l'envoi
+          submitButton.disabled = true;
+          submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Envoi en cours...';
+
+          // Paramètres pour EmailJS
+          const templateParams = {
+            from_name: name,
+            from_email: email,
+            subject: subject,
+            message: message,
+            to_email: 'parfaitky13@gmail.com'
+          };
+
+          // Envoi de l'email
+          emailjs.send('service_t4di2zq', "template_09595fd", templateParams)
+            .then(function(response) {
+              showNotification('Message envoyé avec succès !', 'success');
+              form.reset();
+            }, function(error) {
+              showNotification('Erreur lors de l\'envoi du message. Veuillez réessayer.', 'danger');
+            })
+            .finally(function() {
+              submitButton.disabled = false;
+              submitButton.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Envoyer le message';
+            });
+        });
+      });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Après les autres scripts -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Initialisation de Swiper
+        const swiper = new Swiper('.projects-swiper', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          initialSlide: 2,
+          speed: 800,
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            slideShadows: false,
+          },
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              effect: 'slide',
+            },
+            768: {
+              slidesPerView: 2,
+              effect: 'coverflow',
+            },
+            1024: {
+              slidesPerView: 3,
+              effect: 'coverflow',
+            },
+          },
+          on: {
+            slideChange: function () {
+              const activeSlide = this.slides[this.activeIndex];
+              activeSlide.style.animation = 'slideScale 0.6s ease-out';
+              setTimeout(() => {
+                activeSlide.style.animation = '';
+              }, 600);
+            },
+          },
+        });
+
+        // Gestion du filtrage
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        filterButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            
+            // Mise à jour des boutons actifs
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            
+            // Filtrage des slides
+            const slides = document.querySelectorAll('.swiper-slide');
+            let hasVisibleSlides = false;
+            
+            slides.forEach(slide => {
+              const category = slide.getAttribute('data-category');
+              if (filter === 'all' || category === filter) {
+                slide.classList.remove('hidden');
+                hasVisibleSlides = true;
+              } else {
+                slide.classList.add('hidden');
+              }
+            });
+            
+            // Mise à jour de Swiper
+            swiper.update();
+            swiper.slideTo(0);
+          });
+        });
+      });
+    </script>
+
+    <script>
+      // Observer pour l'animation des sections
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          // Ajouter la classe visible quand la section entre dans le viewport
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            
+            // Déclencher les animations des éléments internes
+            const header = entry.target.querySelector('.section-header');
+            const content = entry.target.querySelector('.section-content');
+            
+            if (header) header.style.transitionDelay = '0.3s';
+            if (content) content.style.transitionDelay = '0.5s';
+            
+            // Arrêter d'observer une fois que l'animation est déclenchée
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15, // Déclencher quand 15% de la section est visible
+        rootMargin: '-50px' // Déclencher un peu avant que la section soit visible
+      });
+
+      // Observer toutes les sections
+      document.querySelectorAll('section').forEach(section => {
+        sectionObserver.observe(section);
+        
+        // Ajouter les classes pour les éléments internes
+        const header = section.querySelector('.section-title, .section-subtitle');
+        const content = section.querySelector('.row, .container > *:not(.section-title):not(.section-subtitle)');
+        
+        if (header) header.classList.add('section-header');
+        if (content) content.classList.add('section-content');
+      });
+
+      // Gérer le cas de la première section visible au chargement
+      document.addEventListener('DOMContentLoaded', () => {
+        const firstSection = document.querySelector('section');
+        if (firstSection && isElementInViewport(firstSection)) {
+          firstSection.classList.add('visible');
+        }
+      });
+
+      // Fonction utilitaire pour vérifier si un élément est dans le viewport
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+    </script>
+
+    <!-- Avant la fermeture du body -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".service-item"), {
+        max: 10,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.3,
+      });
+    </script>
+
+    <!-- Ajoutez ce script avant la fermeture du body -->
+    <script>
+      // Scroll fluide pour la navigation
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          
+          if (targetSection) {
+            // Fermer le menu mobile si ouvert
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+              navbarCollapse.classList.remove('show');
+            }
+
+            // Animation de scroll fluide
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+
+            // Mise à jour de l'URL sans scroll
+            history.pushState(null, '', targetId);
+
+            // Mise à jour du lien actif
+            document.querySelectorAll('.nav-link').forEach(link => {
+              link.classList.remove('active');
+            });
+            this.classList.add('active');
+          }
+        });
+      });
+
+      // Mise à jour du lien actif pendant le scroll
+      window.addEventListener('scroll', function() {
+        let scrollPosition = window.scrollY;
+
+        document.querySelectorAll('section').forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          const sectionHeight = section.clientHeight;
+          const sectionId = section.getAttribute('id');
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            document.querySelectorAll('.nav-link').forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === '#' + sectionId) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
